@@ -1,4 +1,3 @@
-print("hello world!")
 print("hello world!") #字符串
 print(2333) #整数
 print(2.333) #小数
@@ -8,16 +7,16 @@ print(()) #元组
 print([]) #数组/列表
 print({}) #字典
 
-print(1,end="&")
-print(2,end="&")
-print(3,end="")
+# print(1,end="&")
+# print(2,end="&")
+# print(3,end="")
 
-print("哈哈"+"嘻嘻")
+# print("哈哈"+"嘻嘻")
 
-print("哈哈"*10)
+# print("哈哈"*10)
 
-a = 1  #把1这个值赋值给a这个变量，变量名要取得有意义，且小写字母开头
-print(a)
+# a = 1  #把1这个值赋值给a这个变量，变量名要取得有意义，且小写字母开头
+# print(a)
 
 # b = input("请输入:")
 # print("input获取到的值:",b)
@@ -38,10 +37,10 @@ print(a)
 # d = float(input("请输入第二个数字:"))
 # print("和:",c+d)
 
-name = input("请输入你的姓名:")
-age = input("请输入你的年龄:")
-habit = input("请输入你的爱好:")
-print("大家好,我叫{},我今年{}岁,我的爱好是{}。".format(name,age,habit))
+# name = input("请输入你的姓名:")
+# age = input("请输入你的年龄:")
+# habit = input("请输入你的爱好:")
+# print("大家好,我叫{},我今年{}岁,我的爱好是{}。".format(name,age,habit))
 
 #内容比较多的时候怎么写：
 # print("大家好,我叫{mingzi},我今年{nianling}岁,我的爱好是{aihao},我叫{mingzi},我今年{nianling}岁,我的爱好是{aihao}。".format(mingzi=name,nianling=age,aihao=habit))
