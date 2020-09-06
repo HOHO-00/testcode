@@ -5,7 +5,7 @@ chengji = (88,60,59,29,99,20,110)
 chengji = [88,60,59,29,99,20,110]
 hegede = []
 nohege = []
-for i in chengji:  # for的in去取值 if
+for i in chengji:  # for的in去取值 
     if i < 60:
         nohege.append(i)
     else:
@@ -30,7 +30,7 @@ for i in zhanghao:
 # for j in zhanghao.values():
 #     print(j)
 
-# for i, j in zhanghao.items():
+# for i, j in zhanghao.items():  #i对应key值  j对应value值
 #     print(i)
 #     print(j)
 
