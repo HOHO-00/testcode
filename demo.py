@@ -40,11 +40,11 @@
 
 
 
-x = type("hahaha")#type获取数据类型
-print(x)
+# x = type("hahaha")#type获取数据类型
+# print(x)
 
-e = str(2333)
-print(type(e))#把2333转换成str类型
+# e = str(2333)
+# print(type(e))#把2333转换成str类型
 """
 1、任何数据格式都可以转换为字符串
 2、字符串要转换成其他类型，需要满足“长得像”这个条件
@@ -75,17 +75,56 @@ print(type(e))#把2333转换成str类型
 """
 请实现一个计算输入的内容的长度是单数还是双数
 """
-print("0:代表偶数;1:代表奇数")
-lstr = input("请输入您要计算的内容：")
-print(len(lstr)%2)
+# print("0:代表偶数;1:代表奇数")
+# lstr = input("请输入您要计算的内容：")
+# print(len(lstr)%2)
 
 
 
-# my_yuanzu = (1,2,3) #元组
-# print(my_yuanzu)
+# my_yuanzu = (1,2,3,"哈哈","嘻嘻",True,None) #元组
+# print(my_yuanzu)#元组可以让我们少写几个变量；每个变量都会占用计算机的内存，变量越多，占的内存越多
+# #下标就是计算机自动给我们的值编的号，是从0开始 
+# #下标 从左往右数 0 1 2 3 4  从右往左数 -1 -2 -3 -4
+# print(my_yuanzu[3])
+# print(my_yuanzu.index("哈哈"))#获取“哈哈”这个值的下标
+# print(my_yuanzu.count(1))#获取“1”这个值的个数，True也是1
+
+# a = (1,2,3,9,8)
+# b = (4,5,6,a)
+# print(b)#二维元组（多维元组，有多少层就是几维）
+# print(b[-1][1])#输出b元组下标为-2的值（也就是a元组）中的下标为1的值
+# #求二维元组里面值的下标  a[-1].index("值")
+# print(a[0:3])#切片 左闭右开  取元组中的第几个值到第几个值
+
 
 # my_liebiao = [1,2,3,4,5,6] #列表
 # print(my_liebiao)
+
+# b = ("hi","hello")
+# a = [1,2,3,4,5,6,"哈哈","嘻嘻",True,False,None,b]
+# print(a)
+
+# name = input("请输入您的名字：")
+# a.append(name)
+# a.insert(0,name)#0代表插入位置的下标
+# xx = a.pop(7)#把下标为6的值取出来 赋值给xx变量
+# print(xx)
+# c = ["今天","明天","后天"]
+# a.extend(c)#extend可以插入多个值 append只能插入一个值
+# print(a)
+
+# d = [2,1,4,5,3]
+# d.sort()#正序
+# d.sort(reverse=True)#倒序
+# d.reverse()#颠倒
+# d.clear()#清空d
+# d.remove(5)#把d里面5这个值移除 注意remove括号里填的是值 不是下标（如果值有多个重复的 只删除一个）
+# print(d)
+
+"""
+元组和数组的操作方式一模一样
+区别是元组不可以修改，数组可修改（修改是指 比如往里面添加要素等操作）
+"""
 
 # my_zidian = {"username":"liuyun", "password":"a123456"} #字典：json格式 键key 值value
 # print(my_zidian)
