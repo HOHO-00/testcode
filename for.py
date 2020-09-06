@@ -89,3 +89,23 @@ for i in t_user:
 # 作业：
 # b = [{"username":"郭子", "password":"123456"}, {"username":"小玉", "password":"123456"},]
 # 输入一个账号和密码，如果b中存在这个账号，那就注册失败，如果b中没有这个账号，就到b里面去添加账号和密码
+
+b =  [{"username":"墩子", "password":"123456"}, {"username":"小玉", "password":"123456"}]
+username = input("请输入账号:")
+password = input("请输入密码:")
+a = 1
+for i in b:
+    if i.get("username") == username:
+        print("注册失败")
+        break
+    else:
+        if len(b) == a:
+            print("没有找到账号，开始去注册！")
+            # c = {}
+            # c["username"] = username
+            # c["password"] = password
+            c = {"username":username, "password":password}
+            b.append(c)
+            break
+    a = a + 1
+print(b)
