@@ -16,3 +16,19 @@ def query(sql):
 if __name__ == "__main__":
     a = query("select * from t_user where id = 1111")
     print(a)
+
+
+# 作业：，请使用python查询商品表t_goods表里面的商品名为 iPhone的价格，并且判断价格如果价格大于5488，则显示买不起，否则显示买买买。
+
+# 数据库信息：
+# 118.24.105.78
+# root
+# 1qaz!QAZ123***123
+# 数据库：ljtestdb
+
+sql = "select * from t_goods where goods = 'iphone12'"
+res = query(sql)
+if res[0][2] > 5488:
+    print("打扰了，买不起")
+else:
+    print("买！")
