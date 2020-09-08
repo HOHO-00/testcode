@@ -1,5 +1,6 @@
 import pymysql # 要想用pymysql，就必须要导入它
 
+a = "被调用的变量"
 
 def query(sql):
     # 固定的方法
